@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+:root {
+    --cor--fundo: #14213D;
+    --cor--font: #FCA311;
+    --cor--tercearia: #D9D9D9;
+
+    --font--padrão: "Carter One", system-ui;
+
+
+}
+
+* {
+    margin: 1px;
+    padding: 0;
+}
+
+.carter-one-regular {
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Configurações iniciais do projeto */
+
+body{
+    background-color: var(--cor--fundo);
+    font-family: var(--font--padrão);
+    color: var(--cor--font);
+}
+
+.container {
+    color: #FCA311;
+}
+
+.cabecalho {
+    font-size: 30px;
+    color: var(--cor--font);
+}
+
+.cabecalho__titulo {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    margin-right: 1500px;
+   
+}
+
+.cabecalho__img{
+    height: 100px;
+    margin: -14px;
+}
+
+.cabecalho__menu__lista{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-left: 1100px;
+    margin-right: 300px;
+    margin-top: -40px;
+    font-size: 22px;
+    color: var(--cor--font);
+    list-style-type: none;
+}
+
+.cabecalho__menu__lista li a:hover {
+    color:#D9D9D9 ;
+    text-decoration: none;
+}
+
+.cabecalho__menu__lista li a{
+    color: #FCA311;
+    text-decoration: none;
+}
+
+.search-icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    margin-left: 5px; }
+
+.perfil {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 0;
+    margin-top: -7px;
+    background-color: #14213D;
+    padding: 0;
+}
+
+.search-icon:hover{
+        color:#D9D9D9 ;
+        text-decoration: none;
+}
+
+/* Corpo da pagina main  */
+
+.corpo__imagem {
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+}
+
+.corpo__titulo{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.image-container__logo {
+    width: 300px;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.image-container__logo {
+    margin-right: 20px;
+    
+}
+
+
+.texto__descricao {
+    display: flex;
+    flex-direction: column;
+}

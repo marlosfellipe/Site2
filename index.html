@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Example</title>
+    <style>
+        /* Estilos para a imagem */
+        .search-icon {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Example</h1>
+
+    <!-- Imagem que aciona a pesquisa -->
+    <a href="#" onclick="openSearch()">
+        <img src="img/Lupa.png" alt="Ícone de Pesquisa" class="search-icon">
+    </a>
+
+    <div id="search-container" style="display: none;"> <!-- Container de pesquisa, inicialmente oculto -->
+        <form action="/search" method="GET">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="q" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div id="search-results">
+        <!-- Aqui é onde os resultados da pesquisa serão exibidos -->
+    </div>
+
+    <script>
+        // Função para abrir a área de pesquisa ao clicar na imagem
+        function openSearch() {
+            var searchContainer = document.getElementById('search-container');
+            searchContainer.style.display = 'block'; // Exibe o container de pesquisa
+        }
+    </script>
+</body>
+</html>
